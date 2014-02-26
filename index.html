@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Table Grid by @mdo</title>
+    <title>Table Grid by @mdo adapted by @chrisnager</title>
     <link href="table-grid.css" rel="stylesheet">
     <link href="docs.css" rel="stylesheet">
   </head>
@@ -11,102 +11,102 @@
 
       <h1>
         <a href="https://github.com/mdo/table-grid">Table Grid</a>
-        <small>by <a href="https://twitter.com/mdo">@mdo</a></small>
+        <small>by <a href="https://twitter.com/mdo">@mdo</a> adapted by <a href="https://twitter.com/chrisnager">@chrisnager</a></small>
       </h1>
       <p>This is a serious-fun-dumb experiment for writing a different grid system. Rather than use <code>float</code>s, <code>display: inline-block;</code>, or <code>flex-box</code>, I thought I'd try <code>display: table;</code>.</p>
 
       <h2>Default examples</h2>
       <p>Twelve available columns, in all the usual combinations. CSS applies for viewports over <code>600px</code> wide.</p>
       <div class="grid grid-example">
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
-        <div class="col col-1">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-2">2</div>
-        <div class="col col-2">2</div>
-        <div class="col col-2">2</div>
-        <div class="col col-2">2</div>
-        <div class="col col-2">2</div>
-        <div class="col col-2">2</div>
+        <div class="col">2</div>
+        <div class="col">2</div>
+        <div class="col">2</div>
+        <div class="col">2</div>
+        <div class="col">2</div>
+        <div class="col">2</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-3">3</div>
-        <div class="col col-3">3</div>
-        <div class="col col-3">3</div>
-        <div class="col col-3">3</div>
+        <div class="col">3</div>
+        <div class="col">3</div>
+        <div class="col">3</div>
+        <div class="col">3</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-4">4</div>
-        <div class="col col-4">4</div>
-        <div class="col col-4">4</div>
+        <div class="col">4</div>
+        <div class="col">4</div>
+        <div class="col">4</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-5">5</div>
-        <div class="col col-7">7</div>
+        <div class="col">5</div>
+        <div class="col">7</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-6">6</div>
-        <div class="col col-6">6</div>
+        <div class="col">6</div>
+        <div class="col">6</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-8">8</div>
-        <div class="col col-4">4</div>
+        <div class="col">8</div>
+        <div class="col">4</div>
       </div>
 
       <div class="grid grid-example">
-        <div class="col col-12">12</div>
+        <div class="col2">12</div>
       </div>
 
       <h2>Nested</h2>
       <p>Place any <code>.grid</code> within another <code>.col</code> for easy nesting.</p>
       <div class="grid grid-example">
-        <div class="col col-8">
+        <div class="col">
           8
           <div class="grid grid-example">
-            <div class="col col-6">6</div>
-            <div class="col col-6">6</div>
+            <div class="col">6</div>
+            <div class="col">6</div>
           </div>
         </div>
-        <div class="col col-4">4</div>
+        <div class="col">4</div>
       </div>
 
       <h2>Grids with gutters</h2>
       <p>Wrap the <code>.grid</code> with <code>div.grid-padded</code> to add gutters. The wrapping <code>.grid-padded</code> is to negative margin the <code>.grid</code> out to account for the gutters.</p>
       <div class="grid-padded">
         <div class="grid grid-example">
-          <div class="col col-4">4</div>
-          <div class="col col-4">4</div>
-          <div class="col col-4">4</div>
+          <div class="col">4</div>
+          <div class="col">4</div>
+          <div class="col">4</div>
         </div>
       </div>
 
       <div class="grid-padded">
         <div class="grid grid-example">
-          <div class="col col-6">6</div>
-          <div class="col col-6">6</div>
+          <div class="col">6</div>
+          <div class="col">6</div>
         </div>
       </div>
 
       <div class="grid-padded">
         <div class="grid grid-example">
-          <div class="col col-8">8</div>
-          <div class="col col-4">4</div>
+          <div class="col">8</div>
+          <div class="col">4</div>
         </div>
       </div>
 
